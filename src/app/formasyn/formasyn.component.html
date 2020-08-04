@@ -1,0 +1,24 @@
+<div class="login-page">
+  <div class="form">
+
+    <form class="login-form" [formGroup]='loginForm'>
+      <div class="input-container" [ngClass]="{'loading': username.pending}">
+        <input type="text" placeholder="username" formControlName='username' />
+
+        <ng-container *ngIf="username.dirty">
+          <span class="message success" *ngIf="username.valid && !username.pending">
+            done
+          </span>
+          <span class="message error" *ngIf="username.hasError('usernameexist')">
+            there is another user has same name
+          </span>
+        </ng-container>
+      </div>
+
+
+      <button>login</button>
+
+      {{username.errors | json}}
+    </form>
+  </div>
+</div>

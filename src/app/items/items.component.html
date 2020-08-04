@@ -1,0 +1,10 @@
+  <!-- <input type="text" [(ngModel)]='itemNameParent'>
+  <app-single-item [itemName]="itemNameParent" #itemSingle></app-single-item>
+
+  <p>items works!</p> -->
+
+
+  <ng-template #items>
+    <h2>child</h2>
+  </ng-template>
+  <ng-container *ngTemplateOutlet="parentTemplate? parentTemplate :items"></ng-container>

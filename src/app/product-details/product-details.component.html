@@ -1,0 +1,12 @@
+<p>product-details works! </p>
+<h1>#{{id}}</h1>
+
+<code>--------{{currentProduct | json}}</code>
+<br>
+
+<button class="btn btn-danger" (click)="goTo(id-1)">
+  -
+</button>
+<button class="btn btn-primary" (click)="goTo(id+1)">
+  +
+</button>

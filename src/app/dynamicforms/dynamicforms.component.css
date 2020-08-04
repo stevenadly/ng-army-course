@@ -1,0 +1,18 @@
+.classrooms-container {
+  padding: 2em;
+  background: #ddd;
+  margin-top: 1em;
+}
+
+.subjects-container {
+  background-color: teal;
+  padding: 1em;
+}
+
+.subject-item {
+  display: flex;
+}
+
+.subject-item.item {
+  margin: 0px 5px;
+}

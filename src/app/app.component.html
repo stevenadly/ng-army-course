@@ -1,0 +1,202 @@
+<!-- <h1>Angular Army Project</h1>
+<input type="text" [(ngModel)]=uname #myuname>
+<button (click)="call()">call</button>
+<h3 [class]="uname? 'blue':'red' ">user name{{uname}}</h3> -->
+<!-- <ul *ngFor="let student of students; let i = index">
+  <li>
+    ( {{i}} ) {{student.name}} ==== {{student.age}}
+  </li>
+</ul> -->
+
+<!-- <div class="container names" [ngSwitch]="uname">
+  <p *ngSwitchCase="'a'">Ahmed</p>
+  <p *ngSwitchCase="'b'">Bassem</p>
+  <p *ngSwitchCase="'c'">camel</p>
+  <p *ngSwitchDefault>no Name selected</p>
+
+</div> -->
+<!-- <h3 [clas s]="{'blue' : uname, 'red': !uname}">user name{{uname}}</h3> -->
+<!-- <app-items></app-items> -->
+
+
+
+<!-- <app-persons></app-persons> -->
+<!-- <h1>
+  {{title}}
+</h1> -->
+<!-- <p [appHighlight]="'blue'">Highlight me!</p> -->
+
+<!-- <div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3"> -->
+
+
+
+
+
+
+
+
+
+
+<!-- <ng-container *ngTemplateOutlet="thenBlock"></ng-container> -->
+
+<!-- <div class="form-group">
+        <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="" appRandomColors
+          [(ngModel)]="uname">
+      </div>
+
+      <h1 *ngIf="uname then thenBlock else elseBlock">uname: {{uname}}</h1>
+      <ng-template #thenBlock>
+        <h1>then block</h1>
+      </ng-template>
+      <ng-template #elseBlock>
+        <h1>else block</h1>
+      </ng-template>
+
+       -->
+
+
+<!-- <ng-template #parentt>
+        <h2>Parent Template</h2>
+      </ng-template> -->
+<!-- <ng-container *ngTemplateOutlet="child"></ng-container> -->
+<!-- <app-items [parentTemplate]="parentt"></app-items> -->
+
+<!-- <code>console.log('');</code> -->
+<!-- <h1 *appUnless="uname">uname: {{uname}}</h1> -->
+<!-- <ul *ngFor='let name of["steven","adly"];
+       let i = index ;
+       let even = even ;
+        let odd = odd ;
+        let first = first ;   let last = last; let count = count; '>
+        <li>{{name}}</li>
+        <li>index : {{i}}</li>
+        <li>even : {{even}}</li>
+        <li>odd : {{odd}}</li>
+        <li>first : {{first}}</li>
+        <li>last : {{last}}</li>
+        god is good all the time
+        <li>count : {{count}}</li>
+        <hr>
+      </ul> -->
+<!-- 315 183 825 9 -->
+
+
+
+
+<!-- <div class="pipes">
+        <h1 style="direction: rtl;">{{bd |  date:"MMM/ddd/yyyy" :" ": 'ar-EG'  }} </h1>
+        <h1 style="direction: rtl;">{{bd |  date:"short" :" ":'ar-EG'   }} </h1>
+        <h1 style="direction: rtl;">{{bd |  date:"medium" :" ":'ar-EG' }} </h1>
+        <h1 style="direction: rtl;">{{bd |  date:"full"  : " " :'ar-EG' }} </h1>
+        <p>{{ 'tesst p ' | uppercase | lowercase}}</p>
+        <h4>{{promiseReturn | uppercase}}</h4>
+        <h4>{{prmise2 | uppercase}}</h4>
+        <h4>{{promiseAsync | async}}</h4>
+        <h4>{{jsonplaceholderdataOba | async |json}}</h4>
+      </div>
+
+
+
+      <ul *ngFor="let name of ['steven1','steven2','steven3','steven4','steven5','steven6'] | slice:0:2 ">
+        <li>{{name }}</li>
+      </ul>
+
+      <ng-container *ngFor="let star of [1,2,3,4,5] | slice : 0 : 3">
+
+        <img
+          src="https://cdn2.vectorstock.com/i/1000x1000/35/71/isolated-yellow-star-icon-ranking-mark-vector-19283571.jpg"
+          alt="" [ngStyle]="{'width': '30px'}">
+      </ng-container>
+
+      <ng-container *ngFor="let star of [1,2,3,4,5] | slice : -3 +1 ">
+
+        <img src="https://image.flaticon.com/icons/svg/60/60962.svg" alt="" [ngStyle]="{'width': '30px'}">
+      </ng-container>
+    </div>
+  </div>
+</div> -->
+
+
+
+<!-- custom pipe -->
+<!-- <app-dashboard></app-dashboard> -->
+
+
+
+<!-- <app-forms-part></app-forms-part> -->
+
+
+<!-- <app-dashboard2></app-dashboard2> -->
+
+<!-- <app-formasyn></app-formasyn> -->
+
+<!-- <app-dynamicforms></app-dynamicforms> -->
+
+
+<!-- <app-template-driven-form></app-template-driven-form> -->
+
+<!--
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+    aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavId">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="" routerLinkActive="active-nav" [routerLinkActiveOptions]="{exact: true}">Home
+        </a> </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="app-template-driven-form" routerLinkActive="active-nav">template drive form</a>
+      </li>
+      <div class="btn-group" dropdown>
+        <li id="button-basic" dropdownToggle type="button" class="btn dropdown-toggle" aria-controls="dropdown-basic">
+          Teams<span class="caret"></span>
+        </li>
+        <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="button-basic">
+          <ng-container *ngFor="let team of teams">
+              fragment="myFrag"
+            <li role="menuitem"><a class="dropdown-item" [routerLink]="['teams',team.id]" routerLinkActive="active-nav">
+                {{team.name}}</a>
+            </li>
+          </ng-container>
+
+
+
+        </ul>
+      </div>
+    </ul>
+
+  </div>
+</nav> -->
+
+
+
+<div class="container">
+
+  <div class="row">
+    <div class="homelinks">
+      <button mat-raised-button color="primary" routerLink="">Home</button>
+      <button mat-raised-button color="primary" routerLink="products">products</button>
+      <button mat-raised-button color="primary" [routerLink]="[{ outlets: {sidebar: ['products'] } }]">Products</button>
+    </div>
+
+
+
+  </div>
+
+  <div class="row">
+    <div class="col-3">
+      <!-- Auxiliary  Route -->
+      <router-outlet name="sidebar"></router-outlet>
+    </div>
+
+    <div class="col-9">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
+</div>

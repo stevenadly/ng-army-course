@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <form action="" #f='ngForm' (ngSubmit)="onsubmit()" #form="ngForm">
+
+        <div class="form-group">
+          <label for="">name</label>
+          <input type="text" class="form-control" name="username" id="" aria-describedby="helpId" placeholder="name :"
+            ngModel #username='ngModel' required minlength=10>
+        </div>
+
+
+        <div class="form-group">
+          <label for="">email</label>
+          <input type="email" class="form-control" name="email" id="" aria-describedby="helpId" placeholder="email :"
+            ngModel #email='ngModel' pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+        </div>
+
+
+        <button type="submit" class="btn btn-primary">
+          submit
+        </button>
+
+
+      </form>
+      <h1>template drive form using ngForm</h1>
+
+
+      <code>
+        {{email.status | json}}
+      </code>
+
+    </div>
+  </div>
+</div>

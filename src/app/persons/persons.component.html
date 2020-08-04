@@ -1,0 +1,22 @@
+<div class="container">
+  <h1 class="text-center">psersons</h1>
+
+  <div class="form-group">
+    <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="" #n>
+    <button class="btn btn-primary" (click)='addNewName(n.value)'>
+      addd
+    </button>
+  </div>
+
+  <ul *ngFor="let name of names">
+    <li>{{name}}</li>
+  </ul>
+
+
+  <ng-container *ngFor='let p of [1,2,3,4,5]; let i = index;'>
+    <app-single-person [personName]='p' #singlePerson>
+      <app-sub-person></app-sub-person>
+    </app-single-person>
+  </ng-container>
+
+</div>
